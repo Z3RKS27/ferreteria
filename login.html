@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div class="contenedor-login"></div>
+            <form class="formulario-login" action="procesar_login.php" method="post">
+                <div>
+                    <label for="Usuario">Usuario: </label>
+                    <input type="text" id="user" name="Usuario">
+                </div>
+                <div>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="Contraseña">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+    </body>
+</html>
