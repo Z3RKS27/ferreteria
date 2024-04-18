@@ -1,23 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
-        <link rel="stylesheet" href="login.css">
-    </head>
-    <body>
-        <div class="contenedor-login"></div>
-            <form class="formulario-login" action="procesar_login.php" method="post">
-                <div>
-                    <label for="Usuario">Usuario: </label>
-                    <input type="text" id="user" name="Usuario">
-                </div>
-                <div>
-                    <label for="contraseña">Contraseña:</label>
-                    <input type="password" id="contraseña" name="Contraseña">
-                </div>
-                <button type="submit">Login</button>
-            </form>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+        }
+
+        .contenedor-login {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .formulario-login {
+            max-width: 300px;
+            margin: auto;
+        }
+
+        .formulario-login div {
+            margin-bottom: 15px;
+        }
+
+        .formulario-login label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .formulario-login input[type="text"],
+        .formulario-login input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        .formulario-login button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .formulario-login button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-login">
+        <h1>INICIAR SESIÓN</h1>
+        <form class="formulario-login" action="procesar_login.php" method="post">
+            <div>
+                <label for="user">Usuario:</label>
+                <input type="text" id="user" name="Usuario">
+            </div>
+            <div>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="Contraseña">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
 </html>
